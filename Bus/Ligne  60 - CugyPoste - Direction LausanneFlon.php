@@ -1,5 +1,5 @@
 <?php
-//Julien Muggli | https://github.com/Liozon?tab=repositories
+// Julien Muggli | https://github.com/Liozon?tab=repositories
 // Getting data
 $url = 'http://transport.opendata.ch/v1/stationboard?id=8504178&limit=1&to=lausanneflon';   // Data from opendata.ch
 $ch = curl_init();
