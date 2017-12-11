@@ -5,7 +5,7 @@ The first folder, 'JSON', will fetch the RSS/XML data from the newspaper and wil
 The second folder, 'PHP', will parse the JSON data and construct the data for the LaMetric.
 
 List of current newspapers:
-- 20 Minutes
+- 20 Minutes (Swiss French edition)
 - La Gruyère
 - La Liberté
 - Le Courrier
