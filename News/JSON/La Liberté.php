@@ -6,6 +6,7 @@ class XmlToJsonConverter {
 public function ParseXML ($url) {
 $fileContents= file_get_contents($url);
 $fileContents = trim(str_replace('&#x27;', "'", $fileContents));
+$fileContents = trim(str_replace('&#xE7;', "ç", $fileContents));
 $fileContents = trim(str_replace('&#039;', "'", $fileContents));
 $fileContents = trim(str_replace('&#xAB;', "«", $fileContents));
 $fileContents = trim(str_replace('&#xBB;', "»", $fileContents));
