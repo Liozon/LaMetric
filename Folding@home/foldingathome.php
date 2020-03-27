@@ -2,14 +2,14 @@
 // Julien Muggli
 // info@muggli.one
 
-$url = file_get_contents('https://stats.foldingathome.org/api/team/250950');
+$url = file_get_contents('https://stats.foldingathome.org/api/team/250950'); /* <--- Replace "250950" with your team number and that's it !*/
 $json = json_decode($url, true);
 $data = [
             'frames' => [
                 [
                     'index' => 0,
                     'text'  => ' Folding@home stats from ' . $json['name'],
-                    'icon'  => 'i7165'
+                    'icon'  => 'i36106'
                 ],
                 [
                     'index' => 1,
