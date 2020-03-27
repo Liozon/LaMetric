@@ -45,7 +45,7 @@ $data = [
                     'index' => 7,
                     'text'  => "Total team credits: " . $json['total_teams'],
                     'icon'  => ''
-                ],
+                ]
             ]
         ];
 echo json_encode($data);
