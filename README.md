@@ -1,5 +1,7 @@
-# Folding@home team statistics
+# Lametric apps
 
-This application provides statistics from a specified team. just replace the team number in the URL (250950 in this example) on line 5 with your team number and that's it:
+You'll find the following projects:
 
-`$url = file_get_contents('https://stats.foldingathome.org/api/team/YOUR_TEAM_NUMBER');`
+* Bus: a little app that will check the time of the next departure of the choosed line and display it through remaining minutes and seconds
+* Folding@home: an app that displays the statistics of a Folding@home team with WUs, credits and ranking
+* News: an app that'll fetch the 5 latest titles of a newspaper through RSS and display them

@@ -1,15 +1,5 @@
-# News
-The News app is divided in to folders: </br>
-The first folder, 'JSON', will fetch the RSS/XML data from the newspaper and will convert them to JSON data. With that being done, it will be easier to parse the document later.
+# Folding@home team statistics
 
-The second folder, 'PHP', will parse the JSON data and construct the data for the LaMetric.
+This application provides statistics from a specified team. just replace the team number in the URL (250950 in this example) on line 5 with your team number and that's it:
 
-List of current newspapers:
-- 20 Minutes (Swiss French edition)
-- La Gruyère
-- La Liberté
-- Le Courrier
-- Le Figaro
-- Le Monde
-- Le Quotidien Jurassien
-- Le Temps
+`$url = file_get_contents('https://stats.foldingathome.org/api/team/YOUR_TEAM_NUMBER');`
