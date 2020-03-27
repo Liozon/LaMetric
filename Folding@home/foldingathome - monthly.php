@@ -90,7 +90,7 @@ $data = [
                     'index' => 15,
                     'text'  => "#15: " . $json['results'][14]['name'] . " - Total credits: " . $json['results'][14]['credit'],
                     'icon'  => ''
-                ],
+                ]
             ]
         ];
 echo json_encode($data);
