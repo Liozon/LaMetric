@@ -1,8 +1,7 @@
 <?php
 // Julien Muggli
 // info@muggli.one
-$url = file_get_contents('https://covid19-rest.herokuapp.com/api/openzh/v1/country/CH/area/BL
-');
+$url = file_get_contents('https://covid19-rest.herokuapp.com/api/openzh/v1/country/CH/area/BL');
 $json = json_decode($url, true);
 
 $ncumul_conf = 0;
@@ -97,7 +96,8 @@ else
 }
 
 $sums = array(
-    "sums " . end($json['records']) ['abbreviation_canton_and_fl'] => array(
+    "stats" => array(
+        "state" => end($json['records']) ['abbreviation_canton_and_fl'],
         "date" => $date,
         "time" => $time,
         "ncumul_tested" => $ncumul_tested,

@@ -96,7 +96,8 @@ else
 }
 
 $sums = array(
-    "sums " . end($json['records']) ['abbreviation_canton_and_fl'] => array(
+    "stats" => array(
+        "state" => end($json['records']) ['abbreviation_canton_and_fl'],
         "date" => $date,
         "time" => $time,
         "ncumul_tested" => $ncumul_tested,
