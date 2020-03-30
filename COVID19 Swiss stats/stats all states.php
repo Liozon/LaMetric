@@ -51,5 +51,4 @@ $start_json = array(
 
 $output_json = json_encode($start_json);
 echo $output_json;
-
 ?>
