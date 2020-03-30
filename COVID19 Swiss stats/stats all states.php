@@ -49,6 +49,33 @@ $start_json = array(
     )
 );
 
-$output_json = json_encode($start_json);
-echo $output_json;
+//echo json_encode($start_json);
+
+$request = array();
+
+$start_request = "$" . "start_json['statistics'][0][";
+$end_request = "]['state']";
+
+for ($i = 0; $i <= 25; $i++){
+    $sentence = $start_request . $i . $end_request;
+    $request = $sentence;
+}
+
+//echo json_encode($request);
+
+$data = [
+    'frames' => [
+        [
+            'index' => 0,
+            'text'  => ' Coronavirus numbers in Switzerland',
+            'icon'  => 'i36106'
+        ],
+        [
+            'index' => 1,
+            'text'  => "Total cases - " . $request,
+            'icon'  => ''
+        ],
+    ]
+];
+echo json_encode($data); 
 ?>
