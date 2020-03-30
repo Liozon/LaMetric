@@ -96,7 +96,7 @@ else
     $time = end($json['records']) ['time'];
 }
 
-$sums_vd = array(
+$sums = array(
     "sums " . end($json['records']) ['abbreviation_canton_and_fl'] => array(
         "date" => $date,
         "time" => $time,
@@ -109,5 +109,5 @@ $sums_vd = array(
         "ncumul_deceased" => $ncumul_deceased
     )
 );
-echo json_encode($sums_vd);
+echo json_encode($sums);
 ?>
