@@ -38,11 +38,16 @@ $data = [
                 ],
                 [
                     'index' => 6,
-                    'text'  => "Team rank: " . $json['rank'],
+                    'text'  => "#6: " . $json['donors'][5]['name'] . " - Total WUS: " . $json['donors'][5]['wus'] . " - Total credits: " . $json['donors'][5]['credit'] . " - Actual rank: " . $json['donors'][5]['rank'],
                     'icon'  => ''
                 ],
                 [
                     'index' => 7,
+                    'text'  => "Team rank: " . $json['rank'],
+                    'icon'  => ''
+                ],
+                [
+                    'index' => 8,
                     'text'  => "Total team credits: " . $json['total_teams'],
                     'icon'  => ''
                 ]
