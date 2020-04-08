@@ -49,13 +49,13 @@ foreach ($sources as $sourcenum)
 
     //array_push($output, $source_array['stats']);
     $ncumul_tested = $ncumul_tested + $source_array['stats']['ncumul_tested'];
-        $ncumul_conf = $ncumul_conf + $source_array['stats']['ncumul_conf'];
-        $ncumul_hosp = $ncumul_hosp + $source_array['stats']['ncumul_hosp'];
-        $ncumul_ICU = $ncumul_ICU + $source_array['stats']['ncumul_ICU'];
-        $ncumul_vent = $ncumul_vent + $source_array['stats']['ncumul_vent'];
-        $ncumul_released = $ncumul_released + $source_array['stats']['ncumul_released'];
-        $ncumul_deceased = $ncumul_deceased + $source_array['stats']['ncumul_deceased'];
-        $date = date('d.m.Y', strtotime($source_array['stats']['date']));
+    $ncumul_conf = $ncumul_conf + $source_array['stats']['ncumul_conf'];
+    $ncumul_hosp = $ncumul_hosp + $source_array['stats']['ncumul_hosp'];
+    $ncumul_ICU = $ncumul_ICU + $source_array['stats']['ncumul_ICU'];
+    $ncumul_vent = $ncumul_vent + $source_array['stats']['ncumul_vent'];
+    $ncumul_released = $ncumul_released + $source_array['stats']['ncumul_released'];
+    $ncumul_deceased = $ncumul_deceased + $source_array['stats']['ncumul_deceased'];
+    $date = date('d.m.Y', strtotime($source_array['stats']['date']));
 }
 
 $data = [
@@ -103,5 +103,4 @@ $data = [
     ]
 ];
 echo json_encode($data);
-
 ?>
