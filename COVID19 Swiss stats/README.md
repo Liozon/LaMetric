@@ -1,4 +1,4 @@
-# Covid-19 Swiss numbers
+# COVID-19 Swiss numbers
 
 This application retrieves the data from the COVID19 REST-API available [here](https://github.com/apfeuti/covid19-rest).
 
