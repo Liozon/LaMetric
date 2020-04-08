@@ -1,5 +1,5 @@
-# Folding@home team statistics
+# Covid-19 Swiss numbers
 
-This application provides statistics from a specified team. just replace the team number in the URL (250950 in this example) on line 5 with your team number and that's it:
+This application retrieves the data from the COVID19 REST-API available [here](https://github.com/apfeuti/covid19-rest).
 
-`$url = file_get_contents('https://stats.foldingathome.org/api/team/YOUR_TEAM_NUMBER');`
+The data are parsed state by state, each variable counting every "type" of cases. Then the output is constructed for the LaMetric time, displaying each data per line.
