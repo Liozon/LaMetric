@@ -4,6 +4,8 @@
 
 $url = file_get_contents('https://muggli.one/LaMetric/QoQa/JSON/QoQa%20RSS.php');
 $json = json_decode($url, true);
+$date = strtotime($json['channel']['item']['pubDate']);
+$date_formatted = strftime("%d.%m.%Y", $date);
 $data = [
             'frames' => [
                 [
@@ -23,7 +25,7 @@ $data = [
                 ],
                 [
                     'index' => 3,
-                    'text'  => "Offre du " . $json['channel']['pubDate'],
+                    'text'  => "Offre valable le " . $date_formatted,
                     'icon'  => ''
                 ]
             ]
