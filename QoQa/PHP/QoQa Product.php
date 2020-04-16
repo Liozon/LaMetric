@@ -2,38 +2,28 @@
 // Julien Muggli
 // info@muggli.one
 
-$url = file_get_contents('PATH_TO_JSON_DATA');
+$url = file_get_contents('https://muggli.one/LaMetric/QoQa/JSON/QoQa%20RSS.php');
 $json = json_decode($url, true);
 $data = [
             'frames' => [
                 [
                     'index' => 0,
-                    'text'  => ' 20 Minutes',
+                    'text'  => ' Produit du jour sur QoQa',
                     'icon'  => 'i7165'
                 ],
                 [
                     'index' => 1,
-                    'text'  => $json['channel']['item'][0]['title'],
+                    'text'  => $json['channel']['item']['title'],
                     'icon'  => ''
                 ],
                 [
                     'index' => 2,
-                    'text'  => $json['channel']['item'][1]['title'],
+                    'text'  => $json['channel']['item']['description'],
                     'icon'  => ''
                 ],
                 [
                     'index' => 3,
-                    'text'  => $json['channel']['item'][2]['title'],
-                    'icon'  => ''
-                ],
-                [
-                    'index' => 4,
-                    'text'  => $json['channel']['item'][3]['title'],
-                    'icon'  => ''
-                ],
-                [
-                    'index' => 5,
-                    'text'  => $json['channel']['item'][4]['title'],
+                    'text'  => "Offre du " . $json['channel']['pubDate'],
                     'icon'  => ''
                 ]
             ]
