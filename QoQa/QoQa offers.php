@@ -23,7 +23,7 @@ $data = [
                 [
                     'index' => 0,
                     'text'  => ' Offres du jour sur QoQa',
-                    'icon'  => 'i7165'
+                    'icon'  => 'i36651'
                 ],
                 [
                     'index' => 1,
