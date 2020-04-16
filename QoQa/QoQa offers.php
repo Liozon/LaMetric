@@ -2,12 +2,12 @@
 // Julien Muggli
 // info@muggli.one
 
-$qoqaUrl = file_get_contents('https://muggli.one/LaMetric/QoQa/JSON/QoQa.php');
-$qwineUrl = file_get_contents('https://muggli.one/LaMetric/QoQa/JSON/Qwine.php');
-$qbeerUrl = file_get_contents('https://muggli.one/LaMetric/QoQa/JSON/Qbeer.php');
-$qsportUrl = file_get_contents('https://muggli.one/LaMetric/QoQa/JSON/Qsport.php');
-$qookingUrl = file_get_contents('https://muggli.one/LaMetric/QoQa/JSON/Qooking.php');
-$qidsUrl = file_get_contents('https://muggli.one/LaMetric/QoQa/JSON/Qids.php');
+$qoqaUrl = file_get_contents('PATH_TO_FILE');
+$qwineUrl = file_get_contents('PATH_TO_FILE');
+$qbeerUrl = file_get_contents('PATH_TO_FILE');
+$qsportUrl = file_get_contents('PATH_TO_FILE');
+$qookingUrl = file_get_contents('PATH_TO_FILE');
+$qidsUrl = file_get_contents('PATH_TO_FILE');
 
 $jsonQoqa = json_decode($qoqaUrl, true);
 $jsonQwine = json_decode($qwineUrl, true);
