@@ -30,7 +30,7 @@ return $json;
 }
 }
 //Path of the XML file
-$url= 'http://api.20min.ch/rss/ro/view/59';
+$url= 'https://www.qoqa.ch/fr/feed/product';
 //Create object of the class
 $jsonObj = new XmlToJsonConverter();
 //Pass the xml document to the class function
