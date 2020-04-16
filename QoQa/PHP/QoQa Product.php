@@ -10,7 +10,7 @@ $data = [
             'frames' => [
                 [
                     'index' => 0,
-                    'text'  => ' Produit du jour sur QoQa',
+                    'text'  => ' Produits du jour sur QoQa',
                     'icon'  => 'i7165'
                 ],
                 [
@@ -24,7 +24,7 @@ $data = [
                     'icon'  => ''
                 ],
                 [
-                    'index' => 3,
+                    'index' => 50,
                     'text'  => "Offre valable le " . $date_formatted,
                     'icon'  => ''
                 ]
