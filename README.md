@@ -9,3 +9,5 @@ You'll find the following projects:
 [Folding@home](https://github.com/Liozon/LaMetric/tree/master/Folding%40home) an app that displays the statistics of a Folding@home team with WUs, credits and ranking
 
 [News](https://github.com/Liozon/LaMetric/tree/master/News) an app that'll fetch the 5 latest titles of a newspaper through RSS, convert them into JSON data and display them
+
+[QoQa](https://github.com/Liozon/LaMetric/tree/master/QoQa) an app that'll fetch all daily deals from the swiss website [QoQa](www.qoqa.ch) and display the product, its price and description
