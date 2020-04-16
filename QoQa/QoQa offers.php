@@ -54,11 +54,6 @@ $data = [
                     'index' => 6,
                     'text'  => 'Sur Qids: ' . $jsonQids['channel']['item']['title'] . ". " . $jsonQids['channel']['item']['description'],
                     'icon'  => ''
-                ],
-                [
-                    'index' => 7,
-                    'text'  => "Offres valables le " . $date_formatted,
-                    'icon'  => ''
                 ]
             ]
         ];
