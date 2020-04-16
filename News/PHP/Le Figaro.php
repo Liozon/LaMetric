@@ -9,7 +9,7 @@ $data = [
                 [
                     'index' => 0,
                     'text'  => 'Le Figaro',
-                    'icon'  => 'i6889'
+                    'icon'  => 'i7227'
                 ],
                 [
                     'index' => 1,
