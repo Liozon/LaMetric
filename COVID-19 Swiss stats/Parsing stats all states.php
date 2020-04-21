@@ -141,37 +141,37 @@ $data = [
         ],
         [
             'index' => 1,
-            'text' => "Tested - " . $ncumul_tested,
+            'text' => "Tested - " . number_format($ncumul_tested, 0, '', "'"),
             'icon' => ''
         ],
         [
             'index' => 2,
-            'text' => "Confirmed cases - " . $ncumul_conf,
+            'text' => "Confirmed cases - " . number_format($ncumul_conf, 0, '', "'"),
             'icon' => ''
         ],
         [
             'index' => 3,
-            'text' => "Hospitalized - " . $ncumul_hosp,
+            'text' => "Hospitalized - " . number_format($ncumul_hosp, 0, '', "'"),
             'icon' => ''
         ],
         [
             'index' => 4,
-            'text' => "Intensive care unit cases- " . $ncumul_ICU,
+            'text' => "Intensive care unit cases- " . number_format($ncumul_ICU, 0, '', "'"),
             'icon' => ''
         ],
         [
             'index' => 5,
-            'text' => "Under assisted ventilation - " . $ncumul_vent,
+            'text' => "Under assisted ventilation - " . number_format($ncumul_vent, 0, '', "'"),
             'icon' => ''
         ],
         [
             'index' => 6,
-            'text' => "Cured - " . $ncumul_released,
+            'text' => "Cured - " . number_format($ncumul_released, 0, '', "'"),
             'icon' => ''
         ],
         [
             'index' => 7,
-            'text' => "Deceased - " . $ncumul_deceased,
+            'text' => "Deceased - " . number_format($ncumul_deceased, 0, '', "'"),
             'icon' => ''
         ]
         ]
