@@ -9,12 +9,15 @@ $heure = date_create('now')->format("H:i:s");
 
 $url = file_get_contents('YOUR_FEED_PATH');
 $json = json_decode($url, true);
+
+$oxtorrentUrl = $json['channel']['title'];
+$offUrl = strstr($oxtorrentUrl, 'Ox');
 $data = [
             'frames' => [
                 [
                     'index' => 0,
-                    'text'  => ' Dernier ajouts sur OxTorrent. Dernière mise à jour le ' . $date . " à " . $heure,
-                    'icon'  => 'i38227'
+                    'text'  => ' OxTorrent - Derniers ajouts',
+                    'icon'  => '38227'
                 ],
                 [
                     'index' => 1,
@@ -91,6 +94,16 @@ $data = [
                     'text'  => "#15: " . $json['channel']['item'][15]['title'],
                     'icon'  => ''
                 ],
+                [
+                    'index' => 16,
+                    'text'  => 'URL officielle: www.' . $offUrl,
+                    'icon'  => ''
+                ],
+                [
+                    'index' => 17,
+                    'text'  => 'Mis à jour à ' . $heure . " le " . $date,
+                    'icon'  => ''
+                ]
             ]
         ];
 echo json_encode($data);
